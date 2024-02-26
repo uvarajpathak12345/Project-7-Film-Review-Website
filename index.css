@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 12px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
+.top .img1 {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.top .p1 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+
+
+.search {
+    position: relative;
+}
+
+.search input[type="text"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search i {
+    color: #111 !important;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.genre-list {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1; /* Ensure the dropdown is on top of other content */
+}
+
+.genre-list li {
+    list-style: none;
+    margin-top: 0px;
+    float: none;
+    text-align: center;
+}
+
+.genre-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 8px 12px;
+}
+
+.genre-list li a:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+.dropdown-container:hover .genre-list {
+    display: block;
+}
+
+
+
+.img1 {
+    height: 40px;
+    width: 40px;
+}
+
+.p1 {
+    font-weight: 550;
+    margin: 10px 11px;
+    font-size: 19px;
+    color: white;
+}
+
+nav li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0px 13px;
+    font-weight: 500;
+    transition: color 1s, text-decoration 1s;
+}
+
+nav li a:hover {
+    color: yellow;
+}
+
+.top {
+    display: flex;
+}
+
+input {
+    border-radius: 8px;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 8px 24px;
+    margin-right: 11px;
+}
+
+.swiper {
+    width: 100%;
+    height: 990px;
+    position: absolute;
+    top: -356px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 180vh;
+}
+
+.swiper-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+header {
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+    /* Add space between list items */
+    padding: 9px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.video-info {
+    position: absolute;
+    bottom: 500px;
+    left: 90px;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 301px;
+    z-index: 1;
+}
+
+.video-info h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.video-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    width: 400px;
+    display: inline;
+}
+
+.IMD {
+    background-color: #EE9322;
+    border-radius: 7px;
+    color: black;
+    padding: 4px 16px;
+    border: none;
+    margin-right: 9px;
+    font-weight: 500;
+    margin-left: -2px;
+    cursor: pointer;
+    transition: text-decoration 5s;
+}
+
+.rate {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.Genre {
+    display: inline-block;
+    margin-right: 6px;
+    color: yellow;
+    font-size: 38px;
+    font-weight: 550;
+}
+
+.cardmain {
+    background-image: url(images/try.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 10px;
+    width: 238px;
+    height: 292px;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    margin-top: 110px;
+    cursor: pointer;
+}
+
+.cardmain:hover {
+    background-size: 120%;
+}
+
+
+.card {
+    background-image: url(images/try.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 10px;
+    /* Combine margin properties */
+    width: 238px;
+    height: 292px;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    margin-top: 110px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-size: 120%;
+}
+
+.carddivmain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 707px;
+    
+}
+
+.carddiv {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    top: 0px;
+}
+
+h4 {
+    position: absolute;
+    top: 318px;
+    left: 68px;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.IMD1 {
+    position: absolute;
+    background-color: #EE9322;
+    border-radius: 7px;
+    color: black;
+    padding: 4px 16px;
+    border: none;
+    margin-right: 9px;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: text-decoration 5s;
+    top: 312px;
+    left: 154px;
+}
+
+.rate1 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 7px;
+    color: white;
+    top: 332px;
+    left: 170px;
+}
+
+.maindivreviewpart {
+    background-image: url(images/xman.jpg);
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+}
+
+.maindivreviewpart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.9) 100%);
+    pointer-events: none;
+
+}
+
+.reviewpart {
+    position: absolute;
+    margin: 14% 8%;
+    color: white;
+    width: 442px;
+}
+
+.IMDreviewpart {
+    background-color: #EE9322;
+    border-radius: 7px;
+    color: black;
+    padding: 4px 16px;
+    border: none;
+    margin-right: 9px;
+    font-weight: 500;
+    margin-left: -2px;
+    cursor: pointer;
+    transition: text-decoration 5s;
+}
+
+.ratereviewpart {
+    display: inline-block;
+    margin-left: -4px;
+    margin-top: 14px;
+}
+
+.Generereviewpart {
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 0;
+    color: yellow;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#Watch {
+    display: block;
+    position: relative;
+    z-index: 1;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 12px;
+    background-color: #007df3;
+    color: white;
+    font-size: 114%;
+    cursor: pointer;
+}
+
+
+
+#Watch:active {
+    text-decoration: underline;
+}
+
+.cardreviewpart {
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    top: 22%;
+    background-image: url(images/the\ boys.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 72%;
+    width: 11em;
+    height: 16em;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 0%;
+    cursor: pointer;
+}
+
+.cardreviewpart:hover {
+    background-size: 120%;
+}
+
+.releasedate {
+    margin: 0px;
+}
+
+.iframe-container {
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+
+video {
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.film-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -98px;
+    z-index: 1;
+    filter: brightness(25%);
+    transition: filter 0.3s ease;
+}
+
+.film-poster:hover {
+    filter: brightness(38%);
+}
+
+.review-box {
+    position: relative;
+    top: 23%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: left;
+    line-height: 13px;
+    z-index: 1;
+    width: 55%;
+    height: 15%;
+}
+
+.review-box h2 {
+    color: white;
+    line-height: 2px;
+    font-size: 36px;
+    margin-bottom: 3px;
+}
+
+.review-box p {
+
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.genre {
+    color: #ffc107;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.imdb-btn {
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.imdb-btn:hover {
+    background-color: #bf0813;
+}
+
+.rating {
+    font-size: 24px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    #watch {
+        left: 7%;
+        top: 52%;
+    }
+
+    .maindivreviewpart {
+
+        width: 161%;
+        height: 404%;
+    }
+
+    .reviewpart {
+        font-size:2em;
+        width: 90%;
+    }
+
+    .cardreviewpart {
+        width: 30em;
+        height: 44em;
+        left: -65%;
+        top: 36%;
+    }
+    .film-poster{
+        width:198%;
+        height: 183%;
+       
+    }
+    .review-box{
+        width: 140%;
+        left: 5em;
+
+    }
+    .carddivmain{
+        width: 188%;
+    }
+    .carddiv{
+        width: 236%;
+
+    }
+}
+@media only screen and (max-width: 430px){
+
+    .film-poster {
+        width: 250%;
+    }
+    .carddivmain {
+        width: 242%;
+    }
+    .maindivreviewpart {
+        width: 242%;
+        height: 404%;
+    }
+
+}
+@media only screen and (max-width: 310px){
+
+    .film-poster {
+        width: 408%;
+    }
+    .carddivmain {
+        width: 270%;
+    }
+    .maindivreviewpart {
+        width: 397%;
+        height: 404%;
+    }
+
+}

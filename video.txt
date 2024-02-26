@@ -1,0 +1,8 @@
+ let btn = document.getElementById('Watch');
+    btn.addEventListener('click', function () {
+        reviewdiv.innerHTML = `<div class="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/${videodata}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span class="close-button" onclick="closeVideo()">X</span>
+     </div>`;
+
+    });
