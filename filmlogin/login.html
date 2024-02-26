@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <meta name="google-signin-client_id" content="414763617640-qek2bh04mqt8vp9bufknn1spegkc7nvb.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease-in-out;
+            border: none;
+            border-radius: 13px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        input:focus {
+            border-color: #4caf50;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .google-btn {
+            background-color: #4285F4;
+            color: #fff;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .google-btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <div id="loginForm">
+            <label >Username:</label>
+            <input type="text" id="username"  required>
+
+            <label >Password:</label>
+            <input type="password" id="password" required>
+
+            <button  onclick="login()">Login</button>
+        </div>
+
+        <div>
+            <p>Or <a href="signup.php">Sign in</a></p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../index.js"></script>
+</html>
